@@ -1,4 +1,4 @@
 install: 
 echo "Running a custom install command"
 FILE="-Dfile=aadharekyc_v1_0.aar" 
-mvn -U install:install-file $FILE -DgroupId=sdk.deepvue.tech -DartifactId=offline_aadhaar_ekyc -Dversion=1.0 -Dpackaging=aar -DpomFile=pom.xml
+mvn install:-U install-file $FILE -DgroupId=sdk.deepvue.tech -DartifactId=offline_aadhaar_ekyc -Dversion=1.0 -Dpackaging=aar -DpomFile=pom.xml
